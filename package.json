@@ -1,0 +1,39 @@
+{
+  "name": "luxorpool",
+  "description": "Unofficial Luxor Mining Pool API Wrapper",
+  "version": "1.0.0",
+  "author": "Scott Pickering",
+  "bugs": "https://github.com/scottypickering/luxorpool/issues",
+  "dependencies": {
+    "big.js": "^6.2.1",
+    "graphql": "^16.6.0",
+    "graphql-request": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.6",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "files": ["dist", "src"],
+  "homepage": "https://github.com/scottypickering/luxorpool",
+  "keywords": [
+    "luxor",
+    "bitcoin",
+    "mining",
+    "pool"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottypickering/luxorpool.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts"
+}
