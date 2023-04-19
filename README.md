@@ -1,4 +1,4 @@
-# Luxor Mining Pool JavaScript API Client
+# Unofficial Luxor Pool JavaScript API Client
 
 [![Version](https://img.shields.io/npm/v/luxorpool.svg)](https://www.npmjs.org/package/luxorpool)
 [![Try on RunKit](https://badge.runkitcdn.com/luxorpool.svg)](https://runkit.com/npm/luxorpool)
@@ -22,7 +22,7 @@ The package needs to be configured with an API key from your Luxor account:
 import { Luxor } from 'luxorpool'
 
 const luxor = new Luxor({
-  key: 'YOUR_API_KEY'
+  key: 'YOUR_API_KEY',
   coin: 'BTC',
   units: 'TH'
 })
