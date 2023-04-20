@@ -1,8 +1,8 @@
 import { GraphQLClient, Variables } from 'graphql-request'
-import { LuxorPool } from './types'
-import Big from 'big.js'
+import { LuxorPool } from './types.js'
+import { Big } from 'big.js'
 
-export * from './types'
+export * from './types.js'
 
 export class Luxor {
 

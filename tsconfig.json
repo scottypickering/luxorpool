@@ -1,14 +1,23 @@
 {
-  "include": ["src"],
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "es2018",
-    "outDir": "dist",
-    "lib": ["dom", "esnext"],
-    "declaration": true,
-    "moduleResolution": "node",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
     "sourceMap": true,
-    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "node_modules/.cache/.tsbuildinfo",
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["dist"]
 }
