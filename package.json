@@ -1,7 +1,7 @@
 {
   "name": "luxorpool",
   "description": "Unofficial Luxor Mining Pool API Wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Scott Pickering",
   "bugs": "https://github.com/scottypickering/luxorpool/issues",
   "dependencies": {

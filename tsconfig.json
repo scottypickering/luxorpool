@@ -1,6 +1,7 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    "module": "CommonJS",
     "target": "es2018",
     "outDir": "dist",
     "lib": ["dom", "esnext"],
